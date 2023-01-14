@@ -1,0 +1,36 @@
+﻿@using BitirmeProjesi.Models
+@model List<Turlar>
+@{
+    ViewData["Title"] = "TurIndex";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Tur Listesi</h1>
+<table class="table table-bordered" border="1">
+    <tr>
+        <th>ID</th>
+        <th>ÜLKE</th>
+        <th>ŞEHİR</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+   
+    </tr>
+   @foreach (var item in Model)
+   {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.UlkeIsim</td>
+            <td>@item.SehirIsim</td>
+        
+         
+            <td><a href="/TurSil/@item.ID" class="btn btn-danger">SİL</a></td>
+            <td><a href="/TurGetir/@item.ID" class="btn btn-warning">GÜNCELLE</a></td>
+         
+        </tr>
+    }
+
+
+
+</table>
+<a href="Admin/YeniTurEkle" class="btn btn-primary">Yeni Tur Ekle</a>
+

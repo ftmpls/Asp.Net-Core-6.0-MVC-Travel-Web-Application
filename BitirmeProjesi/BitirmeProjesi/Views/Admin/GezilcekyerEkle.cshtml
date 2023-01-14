@@ -1,0 +1,23 @@
+﻿@model BitirmeProjesi.Models.GezilcekYerler
+@{
+    ViewData["Title"] = "GezilcekyerEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Gezilecek yer Ekle</h1>
+<form class="form-group" method="post">
+
+    @Html.LabelFor(x=>x.TurID)
+    @Html.TextBoxFor(x=>x.TurID,new{@class="form-control"})
+    @Html.LabelFor(x=>x.AnaBaslik)
+    @Html.TextBoxFor(x=>x.AnaBaslik,new{@class="form-control"})
+    </br>
+    @Html.LabelFor(x=>x.Aciklama)
+    @Html.TextBoxFor(x=>x.Aciklama,new{@class="form-control"})
+    </br>
+    @Html.LabelFor(x=>x.ResimUrl)
+    @Html.TextBoxFor(x=>x.ResimUrl,new{@class="form-control"})
+    </br>
+    <button class="btn btn-primary">Gezilcek Yer Ekle</button>
+</form>
+

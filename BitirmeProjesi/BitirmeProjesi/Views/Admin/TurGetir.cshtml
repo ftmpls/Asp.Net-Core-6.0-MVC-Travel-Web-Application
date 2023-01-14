@@ -1,0 +1,29 @@
+﻿@model BitirmeProjesi.Models.Turlar
+@{
+    ViewData["Title"] = "TurGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Tur Güncelleme Sayfası</h1>
+<br />
+@using (Html.BeginForm("TurGuncelle","Admin",FormMethod.Post)){
+        @Html.LabelFor(x=>x.ID)
+    @Html.TextBoxFor(x=>x.ID,new{@class="form-control",@readonly="readonly"})
+    <br/>
+    @Html.LabelFor(x=>x.UlkeIsim)
+    @Html.TextBoxFor(x=>x.UlkeIsim,new{@class="form-control"})
+    <br />
+    @Html.LabelFor(x=>x.SehirIsim)
+    @Html.TextBoxFor(x=>x.SehirIsim,new{@class="form-control"})
+    <br />
+    @Html.LabelFor(x=>x.UlkeResimUrl)
+    @Html.TextBoxFor(x=>x.UlkeResimUrl,new{@class="form-control"})
+    <br />
+    @Html.LabelFor(x=>x.TurKacGun)
+    @Html.TextBoxFor(x=>x.TurKacGun,new{@class="form-control"})
+    <br />
+    @Html.LabelFor(x=>x.TurFiyat)
+    @Html.TextBoxFor(x=>x.TurFiyat,new{@class="form-control"})
+    <br />
+    <button class="btn btn-success">Tur Güncelle</button>}
+

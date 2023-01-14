@@ -1,0 +1,26 @@
+﻿@model BitirmeProjesi.Models.GezilcekYerler
+@{
+    ViewData["Title"] = "GezilcekyerGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Tur Güncelleme Sayfası</h1>
+<br />
+@using (Html.BeginForm("GezilcekyerGuncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x=>x.ID)
+    @Html.TextBoxFor(x=>x.ID,new{@class="form-control",@readonly="readonly"})
+    @Html.LabelFor(x=>x.TurID)
+    @Html.TextBoxFor(x=>x.TurID,new{@class="form-control"})
+    @Html.LabelFor(x=>x.AnaBaslik)
+    @Html.TextBoxFor(x=>x.AnaBaslik,new{@class="form-control"})
+    <br/>
+    @Html.LabelFor(x=>x.Aciklama)
+    @Html.TextBoxFor(x=>x.Aciklama,new{@class="form-control"})
+    <br />
+    @Html.LabelFor(x=>x.ResimUrl)
+    @Html.TextBoxFor(x=>x.ResimUrl,new{@class="form-control"})
+    <br />
+    <button class="btn btn-success">GezilcekYer Güncelle</button>
+}
+

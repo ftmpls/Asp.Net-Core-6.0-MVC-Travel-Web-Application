@@ -1,0 +1,100 @@
+﻿@using BitirmeProjesi.Models
+@model List<Turlar>
+@{
+    ViewData["Title"] = "Turlar";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+
+<body>
+	<section class="wthree-row w3-about  py-5">
+		<div class="container py-md-4 mt-md-3">
+			  <h2 class="tittle mb-xl-5 mb-4 text-center">
+					<span class="text-uppercase">Turlar</span> Hizmete sunduğumuz turlar</h2>
+						@foreach (var item in Model)
+				{
+				
+				<div class="card-deck mt-md-5 pt-4">
+			
+				  <div class="card">
+					<img src="@item.UlkeResimUrl" class="img-fluid" alt="Card image cap">
+					<div class="card-body w3ls-card">
+					  <h5 class="card-title">@item.UlkeIsim</h5>
+					  <p class="card-text mb-3"><i class="fas fa-map-marker pr-2"></i>@item.SehirIsim</p>
+					  <p class="card-text mb-3"><i class="far fa-clock pr-2"></i>@item.TurKacGun</p>
+						<a href="#" class="btn btn-primary">@item.TurFiyat</a>
+					</div>
+				  </div>
+				
+@*				  <div class="card">
+					<img src="~/g2.jpg" class="img-fluid" alt="Card image cap">
+					<div class="card-body w3ls-card">
+					  <h5 class="card-title">France</h5>
+					  <p class="card-text mb-3"><i class="fas fa-map-marker pr-2"></i>France / Paris</p>
+					  <p class="card-text mb-3"><i class="far fa-clock pr-2"></i>3 days - 2 nights</p>
+						<a href="#" class="btn btn-primary">$450</a>
+					</div>
+				  </div>*@
+@*				  <div class="card">
+					<img src="~/g3.jpg" class="img-fluid" alt="Card image cap">
+					<div class="card-body w3ls-card">
+					  <h5 class="card-title">Australia</h5>
+					  <p class="card-text mb-3"><i class="fas fa-map-marker pr-2"></i>Melbourne / Sydney</p>
+					  <p class="card-text mb-3"><i class="far fa-clock pr-2"></i>3 days - 2 nights</p>
+						<a href="#" class="btn btn-primary">$500</a>
+					</div>
+				  </div>*@
+				</div>
+					
+
+				}
+@*				<div class="card-deck mt-md-5 pt-3">
+				  <div class="card">
+					<img src="~/g4.jpg" class="img-fluid" alt="Card image cap">
+					<div class="card-body w3ls-card">
+					  <h5 class="card-title">Italy</h5>
+					  <p class="card-text mb-3"><i class="fas fa-map-marker pr-2"></i>Rome / Naples</p>
+					  <p class="card-text mb-3"><i class="far fa-clock pr-2"></i>3 days - 2 nights</p>
+						<a href="#" class="btn btn-primary">$640</a>
+					</div>
+				  </div>
+				  <div class="card">
+					<img src="~/g5.jpg" class="img-fluid" alt="Card image cap">
+					<div class="card-body w3ls-card">
+					  <h5 class="card-title">Saudi Arabia</h5>
+					  <p class="card-text mb-3"><i class="fas fa-map-marker pr-2"></i>Iraq / Iran</p>
+					  <p class="card-text mb-3"><i class="far fa-clock pr-2"></i>3 days - 2 nights</p>
+						<a href="#" class="btn btn-primary">$450</a>
+					</div>
+				  </div>
+				  <div class="card">
+					<img src="~/g6.jpg" class="img-fluid" alt="Card image cap">
+					<div class="card-body w3ls-card">
+					  <h5 class="card-title">South Africa</h5>
+					  <p class="card-text mb-3"><i class="fas fa-map-marker pr-2"></i>Namibia / Durban</p>
+					  <p class="card-text mb-3"><i class="far fa-clock pr-2"></i>3 days - 2 nights</p>
+						<a href="#" class="btn btn-primary">$580</a>
+					</div>
+				  </div>
+				</div>*@
+            </div>
+        </section>
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!-- navigation -->
+	<script src="js/menuFullpage.min.js"></script>
+	<script src="js/expert.js"></script>
+	<!-- jQuery-Photo-filter-lightbox-Gallery-plugin -->
+	<script src="js/move-top.js "></script>
+	<script src="js/easing.js "></script>
+	<script src="js/SmoothScroll.min.js "></script>
+	<!-- Bootstrap core JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>

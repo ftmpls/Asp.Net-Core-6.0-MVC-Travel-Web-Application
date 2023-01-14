@@ -1,0 +1,70 @@
+﻿@model BitirmeProjesi.Models.TurVeYer
+@{
+	ViewData["Title"] = "Gezilcekyerler";
+	Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+
+<body>
+@*<div class="single">
+			<div class="container">
+			<div class="col-md-8 single-main">
+				<div class="single-grid">
+					<a href="">Paris</a>
+					<img src="~/1.jpg" alt=""/>
+					<p>bilmem ne</p>
+				</div>
+			</div>
+		</div>
+	</div>*@
+	<div class="about-page-w3ls py-5">
+		<div class="container py-xl-5 py-lg-3">
+			@foreach (var item in Model.Deger1)
+			{
+				
+			
+				<h3 class="tittle mb-xl-5 mb-4 text-dark text-center">
+					<span class="text-uppercase">Yol Güzergahımız</span>@item.SehirIsim`de Neler Yapiyoruz?
+				</h3>
+			}
+		
+			<div class="row mt-md-4 pt-4">
+				@foreach (var x in Model.Deger2)
+					{
+				<div class="col-lg-6 mt-2 about-w3layouts">
+					<img src=@x.ResimUrl alt="" class="img-fluid">
+				</div>
+				<div class="col-lg-6 about-w3layouts-right mt-lg-0 mt-5">
+					<h3 class="subheading-wthree mb-2">@x.AnaBaslik</h3>
+					
+						<p><i class="fas fa-map-marker pr-2"></i>@x.Aciklama</p>
+						@*<p class="my-2 pb-4 border-bottom">Yolculuğumuzun başladığı ilk günden itibaren Avrupa ve Afrika`nın en populer şehirlerini gizli kalmış güzelliklerini özgürce keşfediyoruz..</p>
+					<p>Sen de gel bu yolculukta bize eşlik et.</p>*@
+					
+
+				</div>
+				}
+			</div>
+			
+			
+		</div>
+	</div>
+
+
+	<script src="js/jquery-2.2.3.min.js"></script>
+
+	<script src="js/menuFullpage.min.js"></script>
+	<script src="js/expert.js"></script>
+	<!-- jQuery-Photo-filter-lightbox-Gallery-plugin -->
+	<script src="js/move-top.js "></script>
+	<script src="js/easing.js "></script>
+	<script src="js/SmoothScroll.min.js "></script>
+	<!-- Bootstrap core JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>

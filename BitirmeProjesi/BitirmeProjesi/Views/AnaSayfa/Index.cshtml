@@ -1,0 +1,258 @@
+﻿
+@using BitirmeProjesi.Models
+@model List<Anasayfa>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<html lang="en">
+
+<body>
+
+    <div class="container">
+        <h2>GO TOUR</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+          @*  @foreach (var x in Model)
+            {*@
+                
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="d-block w-80" src="~/2.jpg".jpg" alt="Los Angeles" >
+                          <div class="carousel-caption">
+                        <h1>HOŞGELDİNİZ</h1>
+                        <p>BAHAMA ÇOK EĞLENCELİ OLACAK</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="d-block w-80"src="~/3.jpg" alt="Chicago">
+                                              <div class="carousel-caption">
+        <h1>HOŞGELDİNİZ</h1>
+        <p>BAHAMA ÇOK EĞLENCELİ OLACAK</p>
+      </div>
+                </div>
+
+               <div class="item">
+                    <img class="d-block w-80" src="~/4.jpg" alt="New york" >
+                    <div class="carousel-caption">
+                        <h1>HOŞGELDİNİZ</h1>
+                        <p>BAHAMA ÇOK EĞLENCELİ OLACAK</p>
+                    </div>
+                </div>
+            </div>
+            @*}*@
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="feat bg-gray pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-sm-12">
+                    <h4><span>Neden Bizi</span> Seçmelisiniz?</h4>
+                    <p>When you choose us, you'll feel the benefit of 10 years' experience of Web Development. Because we know the digital world and we know that how to handle it. With working knowledge of online, SEO and social media.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item2">
+                        <span class="icon feature_box_col_one"><i class="fas fa-bed"></i></span>
+                        <h6>Hemen Rezervasyon</h6>
+                        <p>Rezervasyon işlemi sadece 2 dakikanızı alıyor. Herhangi bir konaklama hakkındaki bilgileri hızlı bir şekilde alabilir ve en iyi seçenek seçebilirsiniz</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item2">
+                        <span class="icon feature_box_col_two"><i class="fas fa-credit-card"></i></span>
+                        <h6>Esnek Ödeme</h6>
+                        <p>Konaklama tesislerinin çoğu ücretsiz iptal, düşük fiyat ve otelde ödeme gibi imkanları sunmaktadır. En iyi deneyimi yaşamak için istekleriniz ve ihtiyaçlarınıza en uygun olanları seçiniz..</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item2">
+                        <span class="icon feature_box_col_three"><i class="fas fa-hourglass-half"></i></span>
+                        <h6>24 x 7 Destek</h6>
+                        <p>
+                            Müşterimizin herhangi bir sorunu veya sorgusu varsa, o zaman yardımcı olmaktan her zaman mutluluk duyarız.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item2">
+                        <span class="icon feature_box_col_four"><i class="fas fa-id-card"></i></span>
+                        <h6>Profosyonel Rehberler</h6>
+                        <p>Everyone wants to live on top of the mountain, but all the happiness and growth occurs while you're climbing it</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item2">
+                        <span class="icon feature_box_col_five"><i class="fas fa-suitcase "></i></span>
+                        <h6>Güvenli Turlar</h6>
+                        <p>Sizin için düzenlediğimiz tüm turlarda konusunda en iyi hizmet sağlayıcılarını seçtik..</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item2">
+                        <span class="icon feature_box_col_six"><i class="fas fa-tags"></i></span>
+                        <h6>En Uygun Fiyat Garantisi</h6>
+                        <p>50'den fazla konaklama tesisinin fiyatlarını karşılaştırıyor ve size en uygun fiyatları sağlıyoruz. Online olarak aynı otel odası, aynı rezervasyon koşullarıyla daha düşük bir fiyata bulursanız farkı size iade ederiz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about py-5">
+        <div class="py-xl-5 py-lg-3">
+            <div class="abt-top py-xl-5 py-lg-3">
+                <div class="col-lg-4 agileits_works-grid ml-3">
+                      
+                    
+                    <h3 class="tittle mb-xl-5 mb-4 text-dark">
+                            <span class="text-uppercase">BIZIM HAKKIMIZDA</span>Seyehat
+                    </h3>
+                    <p class="mb-3 text-start">
+                        Müşteri memnuniyetinin ve kaliteli hizmet anlayışının her şeyden önce geldiğine inanan Jolly’nin tecrübeli çalışanları, bu ilke doğrultusunda ihtiyaçlarınızın tümüne hızlıca cevap verebilmek ve sizlere unutulmaz bir tatil tecrübesi yaşatmak için gerekli tüm hazırlıkları yapmaya her gün, her saat devam etmektedir
+                    </p>
+                    <a href="about.html" class="button-w3ls">Read More</a>
+                    
+                </div>
+                
+                <div class="col-lg-6 agileits_works-grid1 p-0 text-right mt-lg-0 mt-5">
+                    <img src="~/insan.jpg" alt="" class="img-fluid first-img ml-5" />
+                    <img src="~/insan2.jpg" alt="" class="img-fluid img-posi-2" />
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+  <section class="wthree-row  testi-agile">
+        <div class="layer_testi py-5">
+            <div class="container py-md-5 py-3">
+               <h3 class="tittle mb-xl-5 mb-4 text-center text-white">
+					<span class="text-uppercase">Referanslar</span>Müşterilerimiz</h3>
+                <div class="w3_testimonials_grids w3_testimonials_grids py-lg-5 pt-5">
+                    <div class="testi-slide pt-lg-5">
+                        <div id="owl-demo" class="owl-carousel pb-5">
+                           
+                            <div class="item-owl text-center">
+                                <div class="row">
+                                    @foreach (var item in Model)
+                                    {
+                                    <div class="col-md-6">
+                                        <div class="img-agile">
+                                           <img src="@item.MusteriResmiUrl" alt="" class="img-fluid test-img" />
+                                            <h6 class="mt-3 text-white">@item.MusteriAd</h6>
+                                        </div>
+                                        <div class="test-review test-tooltip1">
+                                            <p class="mx-auto mt-3 text-white">
+                                                <i class="fa fa-quote-left pr-3" aria-hidden="true"></i> @item.MusteriYorum;
+                                             
+                                                <i class="fa fa-quote-right pl-3" aria-hidden="true"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    }
+@*                                    <div class="col-md-6 mt-md-0 mt-5">
+                                        <div class="img-agile">
+                                            <img src="~/t1.jpg" alt="" class="img-fluid test-img" />
+                                            <h6 class="mt-3 text-white">Ali Kemal</h6>
+                                        </div>
+                                        <div class="test-review test-tooltip1">
+                                            <p class="mx-auto mt-3 text-white">
+                                                <i class="fab fa-quote-left pr-3" aria-hidden="true"></i> Avrupa turumuzda rehberimiz Zeki bey bize çok yardımcı oldu. İstanbulda tarihi yarımada turumuzda bize eşlik etti ve çok faydalı bilgiler paylaştı. İstanbulda profesyonel ve işini bilen tur rehberi arıyorsanız mutlaka Zeki beyi tercih etmelisiniz
+                                               
+                                                <i class="fab fa-quote-right pl-3" aria-hidden="true"></i>
+                                            </p>
+                                        </div>
+                                    </div>*@
+                                </div>
+                            </div>
+                            
+@*                            <div class="item-owl text-center">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="item-owl">
+                                            <div class="img-agile">
+                                                 <img src="~/t4.jpg" alt="" class="img-fluid test-img" />
+                                                <h6 class="mt-3 text-white">Sena Dalaman</h6>
+                                            </div>
+                                            <div class="test-review test-tooltip1">
+                                                <p class="mx-auto mt-3 text-white">
+                                                    <i class="fab fa-quote-left pr-3" aria-hidden="true"></i>Avrupa  turumuzda rehberimiz Zeki bey bize çok yardımcı oldu. İstanbulda tarihi yarımada turumuzda bize eşlik etti ve çok faydalı bilgiler paylaştı. İstanbulda profesyonel ve işini bilen tur rehberi arıyorsanız mutlaka Zeki beyi tercih etmelisiniz
+                                                    <i class="fab fa-quote-right pl-3" aria-hidden="true"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-md-0 mt-5">
+                                        <div class="item-owl">
+                                            <div class="img-agile">
+                                                 <img src="~/t3.jpg" alt="" class="img-fluid test-img" />
+                                                <h6 class="mt-3 text-white">Selin Beytepe</h6>
+                                            </div>
+                                            <div class="test-review test-tooltip1">
+                                                <p class="mx-auto mt-3 text-white">
+                                                    <i class="fab fa-quote-left pr-3" aria-hidden="true"></i> Avrupa turumuzda rehberimiz Zeki bey bize çok yardımcı oldu. İstanbulda tarihi yarımada turumuzda bize eşlik etti ve çok faydalı bilgiler paylaştı. İstanbulda profesyonel ve işini bilen tur rehberi arıyorsanız mutlaka Zeki beyi tercih etmelisiniz
+                                                    <i class="fab fa-quote-right pl-3" aria-hidden="true"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>*@
+@*                            <div class="item-owl text-center">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="item-owl">
+                                            <div class="img-agile">
+                                                <img src="~/t1.jpg" alt="" class="img-fluid test-img" />
+                                                <h6 class="mt-3 text-white">Ahmet Buğra</h6>
+                                            </div>
+                                            <div class="test-review test-tooltip1">
+                                                <p class="mx-auto mt-3 text-white">
+                                                    <i class="fab fa-quote-left pr-3" aria-hidden="true"></i> Avrupa turumuzda rehberimiz Zeki bey bize çok yardımcı oldu. İstanbulda tarihi yarımada turumuzda bize eşlik etti ve çok faydalı bilgiler paylaştı. İstanbulda profesyonel ve işini bilen tur rehberi arıyorsanız mutlaka Zeki beyi tercih etmelisiniz
+                                                    <i class="fab fa-quote-right pl-3" aria-hidden="true"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="col-md-6 mt-md-0 mt-5">
+                                        <div class="item-owl">
+                                            <div class="img-agile">
+                                                <img src="~/t2.jpg" alt="" class="img-fluid test-img" />
+                                                <h6 class="mt-3 text-white">Ertuğrul Bilici</h6>
+                                            </div>
+                                            <div class="test-review test-tooltip1">
+                                                <p class="mx-auto mt-3 text-white">
+                                                    <i class="fab fa-quote-left pr-3" aria-hidden="true"></i> Avrupa  turumuzda rehberimiz Zeki bey bize çok yardımcı oldu. İstanbulda tarihi yarımada turumuzda bize eşlik etti ve çok faydalı bilgiler paylaştı. İstanbulda profesyonel ve işini bilen tur rehberi arıyorsanız mutlaka Zeki beyi tercih etmelisiniz
+                                                    <i class="fab fa-quote-right pl-3" aria-hidden="true"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+

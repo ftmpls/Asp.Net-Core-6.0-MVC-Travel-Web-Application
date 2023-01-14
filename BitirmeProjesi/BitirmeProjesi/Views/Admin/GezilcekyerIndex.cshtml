@@ -1,0 +1,43 @@
+﻿@using BitirmeProjesi.Models
+@model List<GezilcekYerler>
+@{
+    ViewData["Title"] = "GezilcekYerIndex";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Gezilecek Yer Listesi</h1>
+<table class="table table-bordered" border="1">
+    <tr>
+        <th>ID</th>
+        <th>BASLIK</th>
+        <th>ACIKLAMA</th>
+
+        <th>TUR ID</th>
+@*     <th>SEHIR ISIM</th>*@
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+        
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.AnaBaslik</td>
+            <td>@item.Aciklama</td>
+            <td>@item.TurID</td>
+            @*<td>@item.Turlar.SehirIsim</td>*@
+
+            
+            <td><a href="GezilcekyerSil/@item.ID" class="btn btn-danger">SİL</a></td>
+            <td><a href="GezilcekyerGetir/@item.ID" class="btn btn-warning">GÜNCELLE</a></td>
+
+
+        </tr>
+    }
+
+
+
+</table>
+<a href="GezilcekyerEkle" class="btn btn-primary">Gezilecek yer Ekle</a>
+
